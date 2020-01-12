@@ -2,28 +2,31 @@
 
 1. Clone the project app from gitlab.
    `git clone https://github.com/abduroza/PHP-DooVenue.git`
-2.
 
-2) Go to project app directory. Open the app!.
-   `cd PHP-DooVenue/frontend/web`
+2. Go to common/config. edit your database name, username and password
 
-3) Run app to start development server.
+3. Do migration. ./yii migrate/up
+
+4. Go to frontend/web.
+   `cd frontend/web`
+
+5. Run app to start development server.
    `php -S localhost:8080`
 
-4) Register new user. Click `SignUp` then fill the form
+6. Open your browser. Then type `localhost:8080` and enter.
 
-5) Run app to start development server.
-   `npm run dev`
+7. Register new user. Click `SignUp` then complete the form.
 
-6) Getting started with register user.
-   Open postman!. Fill URL with `localhost:5000/api/user/register` and select `x-www-form-urlencoded` on the `request body` tab and enter the field name `username`, `email`, `password`.
+8. Open your database. Open user table, edit, change value status initial 9 to be 10
 
-7) For detail information see the documentation
-   `https://documenter.getpostman.com/view/8276664/SVfTPSwi?version=latest`
+9. Go to browser, let to login app.
 
-### Testing
+10. Create new venue sport. Click `create`
 
-1. run test
-   `npm run test`
-2. run test coverage
-   `npm run test-coverage`
+11. Complete the form
+
+12. Show all Sport Venue. Click `Venue` on navbar
+
+13. Logout. Click `Logout` on navbar
+
+14. Click `Venue` without login.
